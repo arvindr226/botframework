@@ -8,8 +8,5 @@ RUN mkdir /app
 WORKDIR /app
 COPY app.js /app/
 COPY package.json /app/
-RUN npm install
-RUN npm install -g ngrok
-CMD ngrok http  127.0.0.1:54764 &
 #RUN npm start 
 EXPOSE 3978
